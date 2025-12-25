@@ -1,20 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, user-scalable=no"
-        />
-        <meta name="description" content="Blog pessoal do Dan." />
-        <title>Blog do Dan</title>
-    </head>
-    <body class="is-preload">
-        <div id="wrapper" class="divided">
-            <h1>Bem-vindo ao Blog do Dan</h1>
-            <p>Este site agora está configurado para Português.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do Dan</title>
+    <style>
+        /* CSS - O Estilo do seu site */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sobre o Dan</h1>
+        <p>Bem-vindo ao meu espaço pessoal!</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Meus Projetos</h2>
+            <p>Atualmente estou desenvolvendo meu blog pessoal e explorando tecnologias web no GitHub.</p>
+            <a href="#" class="btn">Ver Repositórios</a>
         </div>
-        <script type="module" src="/src/main.tsx"></script>
-    </body>
+
+        <div class="card">
+            <h2>O que estou aprendendo</h2>
+            <p>Estou focado em entender como funciona o HTML, CSS e a estrutura de repositórios profissionais.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contato</h2>
+            <p>Sinta-se à vontade para me seguir no GitHub para acompanhar minha jornada.</p>
+            <a href="https://github.com/daannzy" class="btn">Seguir no GitHub</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - Blog do Dan</p>
+    </footer>
+
+</body>
 </html>
